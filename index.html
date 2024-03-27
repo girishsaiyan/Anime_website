@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            /* background-color: grey; */
+            background: rgb(0,36,13);
+            background: linear-gradient(90deg, rgba(0,36,13,1) 0%, rgba(45,78,221,1) 32%, rgba(158,244,5,1) 76%, rgba(0,151,255,1) 100%);
+
+        }
+
+        .container {
+            /* background-color: rgb(65, 64, 64); */
+            background: rgb(0,27,36);
+            background: linear-gradient(90deg, rgba(0,27,36,1) 0%, rgba(151,45,221,1) 32%, rgba(5,110,244,1) 76%, rgba(0,255,244,1) 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 15px 7px 15px;
+        }
+
+        .logo a {
+            color: orange;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: 8px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .logo a:hover {
+            /* background-color: rgb(170, 132, 62); */
+            background-color: white;
+
+        }
+
+        .list ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        .list ul li {
+            padding: 0 15px 0 15px;
+        }
+
+
+        .list a {
+            color: orange;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .list a:hover {
+            background-color: white;
+
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+
+            padding: 12px;
+            border-radius: 15px;
+            width: 300px;
+            outline-color: orange;
+        }
+
+        .search button {
+
+            border-radius: 10px;
+            padding: 7px;
+            width: 50px;
+            background-color: bisque;
+        }
+
+        .search button:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        .section-1 {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 20px 20px 20px;
+            ;
+        }
+
+        .section-2 {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .section-3 {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .title {
+            background-color: rgb(5, 4, 4);
+            width: 250px;
+            height: 400px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+
+        }
+
+        .title:hover {
+            outline-color: orange;
+            cursor: pointer;
+            border-color: orange;
+            opacity: 0.7;
+        }
+
+        .title img {
+            /* position: relative;
+            left: 30%; */
+            /* mix-blend-mode: multiply; */
+            /* text-align: center; */
+            border-radius: 5px 5px 0 0;
+            
+            
+        }
+
+        .title a {
+            text-decoration: none;
+            color: rgb(196, 149, 61);
+            position: relative;
+            top: 40%;
+            font-family: 'Poppins', sans-serif;
+            
+    
+        }
+
+        .title h3 {
+
+            display: flex;
+            justify-content: center;
+            /* margin: 0; */
+        }
+
+
+        .bot {
+            /* position: relative;
+            top: 35%; */
+            background-color: white;
+            width: 250px;
+            height: 80px;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .hyper-links {
+            /* background-color: black; */
+            text-align: center; 
+            padding-top: 200px; 
+            display: flex; 
+            justify-content: space-evenly;
+        }
+
+        .hyper-links a {
+            text-decoration: none;
+            /* background: rgb(0,27,36); */
+            color: linear-gradient(90deg, rgba(0,27,36,1) 0%, rgba(151,45,221,1) 32%, rgba(5,110,244,1) 76%, rgba(0,255,244,1) 100%);
+            /* background-color: rgb(255, 5, 5); */
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .disclamer {
+            text-align: center; 
+            padding-top: 100px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .disclamer a {
+            text-decoration: none; 
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="logo">
+            <a href="#">Anime King</a>
+        </div>
+
+
+        <div class="search">
+            <input type="text">
+            <button><i class="fa-brands fa-searchengin" style="font-size: 25px;"></i></button>
+        </div>
+
+
+        <div class="list">
+
+            <ul>
+                <li><a href="">Magic</a></li>
+                <li><a href="">Isekai</a></li>
+                <li><a href="">Fighting</a></li>
+                <li><a href="">Cultivation</a></li>
+                <li><a href="">Sports</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="section-1">
+
+            <div class="title">
+                <img src="/images/Dbz.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>DragonBall Z</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/hunter x hunter.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Hunter x Hunter</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/one piece.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>One Piece</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/yuyu hakusho.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Yu Yu Hakusho</h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Section2 -->
+
+        <div class="section-2">
+
+            <div class="title">
+                <img src="/images/Conan.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Detactive Conan</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/Naruto.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Naruto Shippuden</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/Demon slayer.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Demon Slayer</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/jujutsu kaisen.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>jujutsu Kaisen</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- section-3 -->
+
+        <div class="section-3">
+
+            <div class="title">
+                <img src="/images/seven deadly sins.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Seven Deady Sins</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/Fairy Tail.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Fairy Tail</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/Tokyo.jpeg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Tokyo Revengers</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <img src="/images/Attack on titan.jpg" alt="pencil" width="250px" height="300px">
+                <div class="bot">
+                    <a href="">
+                        <h3>Attack on Titans</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="hyper-links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="disclamer">
+            <a href=""><h3>Copyright © 2023 Anime King. All Rights Reserved</h3></a>
+            <p>Disclaimer: This site Anime King does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
